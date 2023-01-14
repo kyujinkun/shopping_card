@@ -100,11 +100,14 @@ $stmt->execute();
               <h6>Amount Payable</h6>
             </div>
             <div class="col-md-6">
-              <h6 class="py-2"> $ <?= $total_price ?></h6>
+              <h6 class="py-2">$ <span class="totalPrice">
+                  <?= $total_price ?>
+                </span></h6>
               <h6 class="text-success">Free Shipping</h6>
               <hr>
-              <h6></h6> $ <?= $total_price ?></h6>
-
+              <h6>$ <span class="totalPrice">
+                  <?= $total_price ?>
+                </span></h6>
             </div>
           </div>
         </div>
@@ -113,4 +116,6 @@ $stmt->execute();
   </div>
   <!--bootstrap js file-->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
 </body>
