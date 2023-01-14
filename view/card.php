@@ -48,15 +48,24 @@ function card_element($product_img, $product_name, $product_description, $produc
         </small>
         <h5 class="p-3">
           $
-          <?php echo ($product_new_price) ?>
+          <span class="productPrice">
+            <?php echo ($product_new_price) ?>
+          </span>
         </h5>
+
         <button type="submit" class="btn btn-warning m-3 py-2">Save For Later</button>
         <button type="submit" class="btn btn-danger m-3 py-2" name="remove">
           remove
         </button>
       </div>
+      <div class="col-md-3 py-5">
+        <i class="bi bi-dash-circle-fill remove" type=button></i>
+        <input type="text" name="" value="1" class="form-control w-25 d-inline text-center product">
+        <i class="bi bi-plus-circle-fill add" type=button></i>
+      </div>
     </div>
   </div>
+
 </form>
 
 <?php
